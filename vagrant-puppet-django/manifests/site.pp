@@ -3,13 +3,13 @@ Exec { path => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin' }
 # Global variables 
 $inc_file_path = '/vagrant/manifests/files' # Absolute path to the files directory (If you're using vagrant, you can leave it alone.)
 $tz = 'Asia/Bangkok' # Timezone
-$user = 'USERNAME' # User to create
-$password = 'PASSWORD' # The user's password
-$project = 'PROJECT_NAME' # Used in nginx and uwsgi
-$domain_name = 'PROJECT_DOMAIN_NAME.com' # Used in nginx, uwsgi and virtualenv directory
-$db_name = 'DB_NAME' # Mysql database name to create
-$db_user = 'DB_USER' # Mysql username to create
-$db_password = 'DB_PASSWORD' # Mysql password for $db_user 
+$user = 'admin' # User to create
+$password = 'password' # The user's password
+$project = 'django' # Used in nginx and uwsgi
+$domain_name = 'local.django.com' # Used in nginx, uwsgi and virtualenv directory
+$db_name = 'djangodb' # Mysql database name to create
+$db_user = 'root' # Mysql username to create
+$db_password = '' # Mysql password for $db_user 
 
 include timezone
 include user
